@@ -19,6 +19,30 @@ header {
 
 }
 
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 64px 20px 20px;
+}
+
+.header-nav__main li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.header-nav__account {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-nav__account img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
 .main-content {
   max-width: 1440px;
   width: 90%;
