@@ -1,0 +1,28 @@
+{
+  "name": "urban_lesson7",
+  "version": "0.0.1",
+  "description": "excercise 7 for urban university frontend developer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorKntt/Urban_lesson7.git"
+  },
+  "keywords": [
+    "urban",
+    "adaptive"
+  ],
+  "author": "IgorKntt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorKntt/Urban_lesson7/issues"
+  },
+  "homepage": "https://github.com/IgorKntt/Urban_lesson7#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.10.0"
+  }
+}
