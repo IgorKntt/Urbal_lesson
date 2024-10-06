@@ -21,17 +21,17 @@ header {
 
 .main-content {
   max-width: 1440px;
+  width: 90%;
   margin: 0 auto;
 }
 
+
 .main-article {
+  /*position: relative*/
   display: flex;
 }
 
 .main-article__number {
-  /*position: absolute;*/
-  top: 10px;
-  left: 10px;
   color: #24343c;
   font-size: 240px;
   font-weight: 700;
@@ -39,13 +39,13 @@ header {
 }
 
 .main-article__image {
-  display: inline-block;
+  /* display: inline-block;*/
   width: 566px;
   height: 720px;
 
 }
 
 .main-article__content {
-  display: inline-block;
-  position: relative;
+  /*display: inline-block;*/
+  /*max-width: 60%;*/
 }
