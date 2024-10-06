@@ -1,5 +1,51 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: gray;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #0B1D26;
+}
+
+header {
+  background-image: url('./images/bg.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.main-content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-article {
+  display: flex;
+}
+
+.main-article__number {
+  /*position: absolute;*/
+  top: 10px;
+  left: 10px;
+  color: #24343c;
+  font-size: 240px;
+  font-weight: 700;
+
+}
+
+.main-article__image {
+  display: inline-block;
+  width: 566px;
+  height: 720px;
+
+}
+
+.main-article__content {
+  display: inline-block;
+  position: relative;
 }
