@@ -1,12 +1,11 @@
-console.log('js file connected');
+
 
 const mobileMenuClose = document.getElementById("mobileMenuClose");
 const headerNavBurger = document.getElementById("headerNavBurger");
 const mobileMenu = document.getElementById("mobileMenu");
-
+const headerSlider = document.getElementById("headerSlider");
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOMContentLoaded")
 
   mobileMenuClose.onclick = () => {
     mobileMenu.style.display = "none";
@@ -15,4 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
   headerNavBurger.onclick = () => {
     mobileMenu.style.display = "block";
   }
+
+  headerSlider.addEventListener("click", e => {
+    if (e.target.tagName != "A") return;
+
+    headerSlider.querySelectorAll("li").forEach((element) => element.className = "");
+    e.target.parentNode.className = "active";
+  })
 });
