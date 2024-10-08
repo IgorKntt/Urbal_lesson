@@ -70,6 +70,7 @@ header {
   background-color: white;
   border-radius: 0 0 10px 10px;
   display: none;
+  z-index: 900;
 }
 
 .mobile-menu .logo-main {
@@ -86,7 +87,6 @@ header {
 .mobile-menu__bottom {
   display: flex;
   justify-content: space-between;
-  /*align-items:baseline;*/
 }
 
 .mobile-menu__bottom a {
@@ -102,29 +102,6 @@ header {
   margin: 0 20px 0 0;
 }
 
-/*
-.mobile-menu a {
-  color: black
-}
-*/
-
-@media (max-width: 768px) {
-
-  .header-nav__main,
-  .header-nav__account {
-    display: none;
-  }
-
-  .header-nav__burger {
-    display: block;
-  }
-}
-
-@media (max-width:480px) {
-  .mobile-menu__main li {
-    display: block;
-  }
-}
 
 .header-content {
   margin: 200px auto 100px;
@@ -143,6 +120,7 @@ header {
 .header-slider li {
   list-style: none;
   padding: 24px;
+  padding-left: 0;
   text-align: right;
   border-right: solid 4px rgba(255, 255, 255, 0.5);
 }
@@ -167,7 +145,7 @@ header {
   font-weight: 600;
   line-height: 100px;
   max-width: 950px;
-  margin: 32px auto;
+  margin: 32px 5%;
 }
 
 .main-content {
@@ -180,7 +158,10 @@ header {
 .main-article {
   display: flex;
   margin-bottom: 200px;
+  justify-content: flex-start;
 }
+
+
 
 .main-article__number {
   color: #24343c;
@@ -201,8 +182,10 @@ header {
 
 .main-article__image {
   width: 566px;
-  height: 720px;
+  height: auto;
+  object-fit: contain;
 }
+
 
 .main-article__description {
   color: #FBD784;
@@ -244,6 +227,10 @@ header {
   margin-left: 10%;
 }
 
+.main-article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 footer {
   width: 90%;
   max-width: 1440px;
@@ -257,7 +244,7 @@ footer {
 
 .footer-info {
   max-width: 380px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .footer-info p {
@@ -272,15 +259,13 @@ footer {
   line-height: 32px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 64px;
-  position: absolute;
-  bottom: 0;
+  /* margin-top: 64px;*/
 }
 
 .footer-links__list {
   vertical-align: top;
   display: inline-block;
-  margin: 0 64px;
+  margin: 0 3.5vw;
   list-style: none;
 
 }
@@ -297,5 +282,176 @@ footer {
   font-size: 18px;
   line-height: 32px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width:1536px) {
+  header {
+    min-height: 1682px;
+  }
+
+  .main-article__info {
+    margin-left: 10%;
+
+  }
+
+  .main-article__image {
+    width: 35vw;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  header {
+    min-height: 1443px;
+  }
+
+  .main-article {
+    display: block;
+    margin-bottom: 100px;
+  }
+
+  .main-article__info {
+    margin-left: 0;
+  }
+
+  .header-main__title {
+    font-size: 60px;
+  }
+
+  .main-article__image {
+    width: 100%;
+  }
+
+  .footer-links__list {
+    margin-right: 0;
+  }
+}
+
+@media (max-width:768px) {
+  header {
+    min-height: 1082px;
+  }
+
+  .header-nav__main,
+  .header-nav__account {
+    display: none;
+  }
+
+  .header-nav__burger {
+    display: block;
+  }
+
+  .header-main__title {
+    font-size: 44px;
+  }
+
+  .main-article {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+
+  .main-article__number {
+    font-size: 180px;
+  }
+
+  .main-article__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .main-content p,
+  .main-content a,
+  .main-article__description,
+  .header-main__decription {
+    font-size: 16px;
+  }
+
+  .footer-info {
+    max-width: 260px;
+  }
+
+  .footer-links__title {
+    font-size: 20px;
+  }
+
+  .footer-links__item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:480px) {
+  .mobile-menu__main li {
+    display: block;
+  }
+
+  .header-main__title {
+    line-height: 70px;
+  }
+
+  /*
+  .header-content {
+    display: block;
+  }
+
+  .header-follow {
+    text-align: right;
+  }
+
+  .header-follow__text {
+    writing-mode: unset;
+  }
+
+  .header-follow li {
+    display: inline-block;
+  }
+
+  .header-main {
+    display: inline-block
+  }
+
+  .header-slider {
+    display: inline-block;
+  }
+*/
+  .main-article {
+    margin-bottom: 50px;
+  }
+
+  .main-article__number {
+    font-size: 140px;
+  }
+
+  .main-article__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .footer-wrapper {
+    display: block;
+  }
+
+  .footer-links__list {
+    display: block;
+  }
+
+  @media (max-width:320px) {
+    .mobile-menu {
+      padding: 50px 4vw;
+    }
+
+    .mobile-menu__bottom {
+      display: block;
+    }
+
+    .mobile-menu__main {
+      margin-bottom: 10px;
+    }
+
+    .header-main__title {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
 }
