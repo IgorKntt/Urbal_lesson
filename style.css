@@ -24,12 +24,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  /* background: url('./images/bg.png') no-repeat center / cover;*/
   min-height: 1900px;
   height: 100vh;
   font-size: 18px;
   font-weight: 700;
-
 }
 
 
@@ -56,6 +54,24 @@ header {
 .header-nav__account img {
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.header-nav__burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .header-nav__main,
+  .header-nav__account {
+    display: none;
+  }
+
+  .header-nav__burger {
+    display: block;
+  }
+
+
 }
 
 .header-content {
@@ -166,7 +182,6 @@ header {
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
-
 }
 
 .main-article:nth-child(odd) .main-article__content {
@@ -178,7 +193,6 @@ header {
 }
 
 footer {
-
   width: 90%;
   max-width: 1440px;
   margin: 64px auto;
